@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- Insert to your webpage before the </head> -->
+     <script src="sliderengine/jquery.js"></script>
+     <script src="sliderengine/amazingslider.js"></script>
+     <link rel="stylesheet" type="text/css" href="sliderengine/amazingslider-1.css">
+     <script src="sliderengine/initslider-1.js"></script>
+     <!-- End of head section HTML codes -->
+</head>
+<body>
+    <h1>
+        <marquee behavior="altenate" onmouseenter="stop()"onmouseout="start()" scrollamount="20%" direction="">
+            <font color="red" size="10px">Welcome to Sylani Online Academy</font>
+        </marquee>
+    </h1>
+    <form action="./submit.html">
+        <center>
+            <img src="https://mail.saylaniwelfare.com/static/media/logo_saylaniwelfare.22bf709605809177256c.png" alt="">
+        </center>
+        <!-- Insert to your webpage where you want to display the slider -->
+<div class="amazingslider-wrapper" id="amazingslider-wrapper-1" style="display:block;position:relative;max-width:900px;margin:0px auto 48px;">
+    <div class="amazingslider" id="amazingslider-1" style="display:block;position:relative;margin:0 auto;">
+        <ul class="amazingslider-slides" style="display:none;">
+            <li><img src="images/a889ae75-b923-4d46-a927-2b110ffc163f.jpg" alt="Qurbani with sylani"  title="Qurbani with sylani" />
+            </li>
+            <li><img src="images/7b6e8a21-53ec-4c3c-836a-c4b54446d7e9.jpg" />
+            </li>
+            <li><img src="images/tradeCover.jpg" alt="Sylani Trust Welfare"  title="Sylani Trust Welfare" />
+            </li>
+        </ul>
+        <ul class="amazingslider-thumbnails" style="display:none;">
+            <li><img src="images/a889ae75-b923-4d46-a927-2b110ffc163f-tn.jpg" alt="Qurbani with sylani" title="Qurbani with sylani" /></li>
+            <li><img src="images/7b6e8a21-53ec-4c3c-836a-c4b54446d7e9-tn.jpg" /></li>
+            <li><img src="images/tradeCover-tn.jpg" alt="Sylani Trust Welfare" title="Sylani Trust Welfare" /></li>
+        </ul>
+    <div class="amazingslider-engine"><a href="http://amazingslider.com" title="Responsive Slider jQuery">Responsive Slider jQuery</a></div>
+    </div>
+</div>
+<!-- End of body section HTML codes -->
+        <h1 style="color:rgb(30, 167, 2)">
+            <center>
+                <em>
+                    <strong>
+                        Sylani Online Academy
+                    </strong>
+                </em>
+            </center>
+        </h1>
+<form action="" >
+
+    <table align="center" bgcolor="grey" cellpadding="10px" cellspacing="10px" width="50%">
+        <tr>
+            <td colspan="2"  align="center"><h2>Student Registration Form</h2></td>
+        </tr>
+          
+        <tr>
+           
+            <td><label for="Name">Name: </label></td>
+            <td><input size="40" type="text" name="Name" placeholder="Enter your name here" required></td>
+        </tr>
+        <br>
+        <tr>
+            <td><label for="Father">Father Name:</label></td>
+            <td><input size="40" type="text" name="Father" placeholder="Enter Father name here" required></td>
+        </tr>
+        
+        <tr>
+            <td><label for="Password">Password:</label></td>
+            <td><input size="40" type="password" name="password" placeholder="Enter Password" required></td>
+        </tr>
+        <tr>
+            <td><label for="address">Addres:</label></td>
+            <td><textarea aria-setsize="50" name="address" id=""></textarea></td>
+        </tr>
+        <tr>
+            <td><label for="Gender">Gender:</label></td>
+            <td><input type="radio" name="Gender" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="Gender" id="Female">
+            <label for="Female">Female</label></td>
+        </tr>
+        <tr>
+            <td><label for="Language">Language:</label></td>
+            <td>
+            <input type="checkbox" name="Language" id="Hindi">
+            <label for="Hindi">Hindi</label>
+            <input type="checkbox" name="Language" id="English">
+            <label for="English">English</label>
+            <input type="checkbox" name="Language" id="Urdu">
+            <label for="Urdu">Urdu</label>
+            <input type="checkbox" name="Language" id="Arabic">
+            <label for="Arabic">Arabic</label>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="DOB">DOB:</label></td>
+            <td><input type="date" name="DOB" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+        <td><input size="40" type="email" placeholder="Enter your email" required></td>
+        </tr>
+        <tr>
+            <td><label for="Phone">Phone Number:</label></td>
+            <td><input type="number" name="Phone" placeholder="Enter Your No."> </td>
+        </tr>
+        <tr>
+            <td><label for="City">Select City:</label></td>
+            <td><select name="City" id="" >  
+                <option value="" disabled>Select city</option>
+                <option value="Karachi">Karachi</option>
+                <option value="Lahore">Lahore</option>
+                <option value="Islamabad">Islamabad</option>
+                <option value="Peshawar">Peshawar</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="Hobbies">Hobbies:</label></td>
+            <td><select name="hobbies" multiple>
+                <option value="Cricket">Cricket</option>
+                <option value="Football">Football</option>
+                <option value="Reading">Reading</option>
+                <option value="Writing">Writing</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td><label for="pic">picrure:</label></td>
+            <td><input type="file" accept=".jpg,.png" name="pic" required></td>
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <input type="submit" value="Submit" name="submit" address="forms.html">
+                <input type="reset" value="Reset" name="reset">
+            </td>
+        </tr>
+            
+      
+        
+
+
+
+
+
+    </table>
+</form>
+</body>
+</html>
